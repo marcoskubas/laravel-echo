@@ -38,3 +38,9 @@ php artisan migrate:refresh --seed
 ## Listando salas
 
 php artisan make:controller RoomsController
+
+## Integrando Laravel com tecnologias front-end
+
+npm install
+
+gulp watch
