@@ -14,3 +14,9 @@ composer dumpautoload (Em caso de Renomear alguma classe)
 php artisan migrate --seed
 
 php artisan migrate:refresh --seed (Roda tudo novamente)
+
+## Criando model Mensagem
+
+php artisan make:model Message -m
+
+php artisan migrate
