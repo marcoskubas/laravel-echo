@@ -20,3 +20,17 @@ php artisan migrate:refresh --seed (Roda tudo novamente)
 php artisan make:model Message -m
 
 php artisan migrate
+
+## Ligando sala aos usuários
+
+php artisan make:migration --table=users add_rooms_to_users_table
+
+php artisan migrate
+
+composer update doctrine/dbal
+
+php artisan migrate:refresh --seed
+
+php artisan make:seeder UsersTableSeeder
+
+php artisan migrate:refresh --seed
