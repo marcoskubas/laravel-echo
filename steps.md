@@ -34,3 +34,7 @@ php artisan migrate:refresh --seed
 php artisan make:seeder UsersTableSeeder
 
 php artisan migrate:refresh --seed
+
+## Listando salas
+
+php artisan make:controller RoomsController
