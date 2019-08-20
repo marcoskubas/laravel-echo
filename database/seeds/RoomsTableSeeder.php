@@ -1,8 +1,9 @@
 <?php
 
+use App\Room;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class RoomsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(RoomsTableSeeder::class);
-         $this->call(UsersTableSeeder::class);
+        factory(Room::class,10)->create();
     }
 }
